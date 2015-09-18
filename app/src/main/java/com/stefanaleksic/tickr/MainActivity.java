@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import java.util.Calendar;
 
@@ -21,7 +22,7 @@ public class MainActivity extends Activity {
     public void clickedTickTock(View v) {
         Calendar c = Calendar.getInstance();
         int hour = c.get(Calendar.HOUR);
-        findViewById(R.id.tickTockTime)
-
+        TextView tickTockTextView = ((TextView)findViewById(R.id.tickTockTime));
+        tickTockTextView.setText(hour + "");
     }
 }
